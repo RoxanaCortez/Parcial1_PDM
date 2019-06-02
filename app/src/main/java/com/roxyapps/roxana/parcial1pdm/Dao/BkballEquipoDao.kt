@@ -10,8 +10,8 @@ import com.roxyapps.roxana.parcial1pdm.Entity.BkballEquipo
 @Dao
 interface BkballEquipoDao {
     @Query("SELECT * FROM BkballEquipo")
-    fun getAll():LiveData<List<BkballEquipo>>
+    suspend fun getAll():LiveData<List<BkballEquipo>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun Insert(equipo: BkballEquipo)
+     suspend fun Insert(equipo : BkballEquipo)
 }
