@@ -1,11 +1,11 @@
-package com.roxyapps.roxana.parcial1pdm
+package com.roxyapps.roxana.parcial1pdm.Database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.roxyapps.roxana.parcial1pdm.Dao.BkballEquipoDao
-import com.roxyapps.roxana.parcial1pdm.Entity.BkballEquipo
+import com.roxyapps.roxana.parcial1pdm.Database.Dao.BkballEquipoDao
+import com.roxyapps.roxana.parcial1pdm.Database.Entity.BkballEquipo
 
 @Database(entities = [BkballEquipo::class], version = 1, exportSchema = false)
 abstract class BkballRoomDatabase : RoomDatabase() {
@@ -27,7 +27,7 @@ abstract class BkballRoomDatabase : RoomDatabase() {
                 val instance = Room
                     .databaseBuilder(context.applicationContext, BkballRoomDatabase::class.java, "Equipos")
                     .build()
-                    INSTANCE=instance
+                    INSTANCE =instance
                     return instance
             }
         }

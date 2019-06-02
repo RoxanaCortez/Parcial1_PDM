@@ -1,4 +1,4 @@
-package com.roxyapps.roxana.parcial1pdm.Entity
+package com.roxyapps.roxana.parcial1pdm.Database.Entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
