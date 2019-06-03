@@ -27,11 +27,12 @@ class BkballPuntajes : AppCompatActivity() {
     var score2 = 0
     lateinit var viewModel: BkballEquipoViewModel
     lateinit var adapter: BkballEquipoAdapter
+    /*
     private lateinit var player1: TextView
     private lateinit var player2: TextView
     private lateinit var scorea: TextView
     private lateinit var scoreb: TextView
-    private lateinit var ganador: TextView
+    private lateinit var ganador: TextView*/
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +54,7 @@ class BkballPuntajes : AppCompatActivity() {
         playerB2Score()
         playerB3Score()
         ganador()
-
+        /*
         player1 = findViewById(R.id.tv_player1)
         player2 = findViewById(R.id.tv_player2)
         scorea = findViewById(R.id.team_score1)
@@ -79,7 +80,7 @@ class BkballPuntajes : AppCompatActivity() {
                 setResult(Activity.RESULT_OK, replyIntent)
             }
             finish()
-        }
+        }*/
     }
 
     fun playerA1Score()= team_apunto1.setOnClickListener {
@@ -121,11 +122,11 @@ class BkballPuntajes : AppCompatActivity() {
     private fun ganador()= fin.setOnClickListener{
         if(score1>score2){
             val gano= findViewById<TextView>(R.id.ganador)
-            gano.setText("Ganador jugador 1")
+            gano.setText("Ganador equipo 1")
         }
         if(score1<score2){
             val gano= findViewById<TextView>(R.id.ganador)
-            gano.setText("Ganador jugador 2")
+            gano.setText("Ganador equipo 2")
         }
         if(score1==score2){
             val gano= findViewById<TextView>(R.id.ganador)
