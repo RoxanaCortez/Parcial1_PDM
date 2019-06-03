@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:background="#fff4f4f4"
               android:orientation="vertical"
-              tools:context=".GameActivity">
+              tools:context=".Activities.BkballPuntajes">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -170,6 +170,15 @@
                 android:textSize="14sp" />
 
         />
+
+        <TextView
+                android:id="@+id/ganador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hola"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="20sp"/>
     </LinearLayout>
 
 </LinearLayout>

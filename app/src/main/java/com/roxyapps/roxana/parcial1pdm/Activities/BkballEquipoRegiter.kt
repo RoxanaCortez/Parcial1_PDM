@@ -1,9 +1,12 @@
 package com.roxyapps.roxana.parcial1pdm.Activities
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.roxyapps.roxana.parcial1pdm.Database.Entity.BkballEquipo
 import com.roxyapps.roxana.parcial1pdm.R
 import kotlinx.android.synthetic.main.registro_equipos.*
 
@@ -31,4 +34,5 @@ class BkballEquipoRegiter : AppCompatActivity() {
             }
         }
     }
+
 }
