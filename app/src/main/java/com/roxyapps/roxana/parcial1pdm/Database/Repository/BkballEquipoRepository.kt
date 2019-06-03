@@ -7,14 +7,14 @@ import com.roxyapps.roxana.parcial1pdm.Database.Entity.BkballEquipo
 
 class BkballEquipoRepository (val BkballEquipoDao : BkballEquipoDao) {
 
-    val AllEquipos : LiveData<List<BkballEquipo>> = BkballEquipoDao.getAll()
+    val allEquipos : LiveData<List<BkballEquipo>> = BkballEquipoDao.getAll()
 
-    fun GetAll() : LiveData<List<BkballEquipo>>{
+    fun getAll() : LiveData<List<BkballEquipo>>{
         return BkballEquipoDao.getAll()
     }
 
     @WorkerThread
-    fun Insert(equipo: BkballEquipo){
-        BkballEquipoDao.Insert(equipo)
+    fun insert(equipo: BkballEquipo){
+        BkballEquipoDao.insert(equipo)
     }
 }

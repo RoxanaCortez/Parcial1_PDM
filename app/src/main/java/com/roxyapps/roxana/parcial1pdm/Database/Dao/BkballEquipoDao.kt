@@ -13,5 +13,5 @@ interface BkballEquipoDao {
     fun getAll():LiveData<List<BkballEquipo>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun Insert(equipo: BkballEquipo)
+    fun insert(equipo: BkballEquipo)
 }

@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff4f4f4"
+              android:orientation="vertical"
+              tools:context=".GameActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="#fff4f4f4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:id="@+id/tv_player1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team A"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:id="@+id/team_score1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="56sp" />
+
+            <Button
+                    android:id="@+id/team_apunto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#fd0095ff"
+                    android:text="+1 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+            <Button
+                    android:id="@+id/team_apunto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fd0095ff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="+2 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+            <Button
+                    android:id="@+id/team_apunto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fd0095ff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="+3 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="#fff4f4f4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:id="@+id/tv_player2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/team_score2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="56sp" />
+
+            <Button
+                    android:id="@+id/team_bpunto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#fd0095ff"
+                    android:text="+1 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+            <Button
+                    android:id="@+id/team_bpunto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fd0095ff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="+2 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+            <Button
+                    android:id="@+id/team_bpunto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fd0095ff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="+3 Point"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#ffd3d3d3"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Finalizar"
+                android:textSize="14sp" />
+
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:layout_margin="15dp"
+              android:gravity="center"  >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/et_Equipo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="Nombre del primer equipo"/>
+
+
+        <EditText
+                android:id="@+id/et_Equipo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_Equipo1"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Nombre del segundo equipo"/>
+
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/bt_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar partida"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

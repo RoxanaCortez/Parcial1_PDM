@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+    <RelativeLayout
+            android:id="@+id/caja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border">
+
+        <TextView
+                android:id="@+id/tv_E1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Equipo 1:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_nombre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_E1"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E1"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_S1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_E1"
+                android:layout_margin="4dp"
+                android:text="Score E1:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_S1"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_E2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_S1"
+                android:layout_margin="4dp"
+                android:text="Equipo 2:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_nombre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_E2"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_S2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_E2"
+                android:layout_margin="4dp"
+                android:text="Score E2:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_S2"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_fpartido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_S2"
+                android:layout_margin="4dp"
+                android:text="Fecha:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_fpartido"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_hpartido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_fecha"
+                android:layout_margin="4dp"
+                android:text="Hora:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_hpartido"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+
+        <TextView
+                android:id="@+id/tv_gnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hpartido"
+                android:layout_margin="4dp"
+                android:text="Ganador:"
+                android:textColor="#6E6E6E" />
+
+        <TextView
+                android:id="@+id/tv_ganador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_gnombre"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_E2"
+                android:hint=""
+                android:textColor="#333" />
+    </RelativeLayout>
+
+</LinearLayout>

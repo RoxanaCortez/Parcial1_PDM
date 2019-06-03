@@ -15,9 +15,9 @@ data class BkballEquipo (
     @ColumnInfo(name = "PrimerPuntaje") val PrimerPuntaje : String,
 
     @ColumnInfo(name = "SegundoEquipo") val SegundoEquipo : String,
-    @ColumnInfo(name = "SegundoPuntaje") val SegundoPuntaje : String,
+    @ColumnInfo(name = "SegundoPuntaje") val SegundoPuntaje : String
 
-    @ColumnInfo(name = "Fecha") val Fecha : Date,
-    @ColumnInfo(name = "Hora") val Hora : Time
+    //@ColumnInfo(name = "Fecha") val Fecha : Date,
+    //@ColumnInfo(name = "Hora") val Hora : Time
 
 )
